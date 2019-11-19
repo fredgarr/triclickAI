@@ -35,10 +35,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Original code: Debounce.ino
-modified 8 May 2014  by Scott Fitzgerald   modified 2 Sep 2016
-by Arturo Guadalupi   modified 8 Sep 2016   by Colby Newman
-This code is in the public domain.
 """
 
 from __future__ import absolute_import, division, print_function, unicode_literals
