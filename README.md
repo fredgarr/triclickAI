@@ -17,6 +17,6 @@ Short pulse duration is set 200ms and long pulse is set to 700ms. AI will manage
 * TensorFlowScripts folder has a python scripts that defines and trains the NN, and then connects to Arduino board to wait for 'click' commands.
 * triclickAI folder holds the arduino code that waits for 3 consecutives click in less than 3s, and send data on the serial link if ok.
 
-Next step is to embed the trained NN in the Arduino.
+Next step is to embed the trained NN in the Arduino. To do...
 
 <img src="doc/Schematics.png" align="middle">
