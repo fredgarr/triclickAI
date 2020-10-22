@@ -169,8 +169,6 @@ if __name__ == "__main__":
     # Normalize between [0..1]
     learningPulses = learningPulses / (TOTAL_DURATION*1.0)
 
-    print(learningPulses.shape)
-
     # Build a verification vector:
     rnd.seed(VERIFY_SEED)
     verifySeqNum, verifyPulses = makeInputData(500)
