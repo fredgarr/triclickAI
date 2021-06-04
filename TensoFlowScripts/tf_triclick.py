@@ -194,8 +194,19 @@ if __name__ == "__main__":
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
     
-    # Train the Model:
+    # Train and save the Model:
+    print("Input shape: %r, Output shape: %r" %(learningPulses.shape, learningSeqNum.shape))
     model.fit(learningPulses, learningSeqNum, epochs=20)
+
+    # model.save("tf_model/saved")
+
+    # # Convert model to fixpoint:
+    # converter = tf.compat.v2.lite.TFLiteConverter.from_keras_model(model)
+    # converter.optimizations = [tf.lite.Optimize.DEFAULT]
+    # converter.target_spec.supported_types = [tf.lite.constants.QUANTIZED_UINT8]
+    # tflite_quant_model = converter.convert()
+
+
 
     # Evaluate accuracy of the model:
     test_loss, test_acc = model.evaluate(verifyPulses,  verifySeqNum, verbose=2)
